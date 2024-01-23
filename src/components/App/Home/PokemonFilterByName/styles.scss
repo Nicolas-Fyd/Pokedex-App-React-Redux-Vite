@@ -1,0 +1,19 @@
+.filter {
+  height: 3rem;
+  width: 20%;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  border: none;
+
+  &::placeholder {
+    color: black;
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 40%;
+  }
+
+  @media (max-width: 480px) {
+    width: 60%;
+  }
+}

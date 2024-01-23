@@ -1,0 +1,47 @@
+@use 'src/styles/vars';
+
+.header {
+  height: 10vh;
+  background-color: vars.$lightColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+
+  .logo {
+    height: 100%;
+    width: 10vh;
+  }
+  
+}
+
+.right-header {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.pokeball {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.pokeball:hover {
+  transform: scale(1.1) rotate(-15deg);
+}
+
+.connexion  {
+  text-align: left;
+}
+
+.registration {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+.registration:hover {
+  font-weight: bold;
+}

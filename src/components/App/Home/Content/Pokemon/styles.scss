@@ -1,0 +1,43 @@
+@use 'src/styles/vars';
+
+.pokemon {
+  background-color: vars.$darkColor;
+  border-radius: 30px;
+  margin: 0.5rem;
+  position: relative;
+  padding: 1.5rem 0.5rem;
+  min-width: 300px;
+  max-width: 400px;
+
+  .logo-container {
+    position: absolute;
+    top: 10px; /* Ajustez la valeur selon votre préférence */
+    right: 10px; /* Ajustez la valeur selon votre préférence */
+  }
+  
+  .logo-img {
+    width: 50px; /* Ajustez la taille de votre logo selon votre préférence */
+    height: auto;
+  }
+
+  .pokemon-img {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .pokemon-name {
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .pokemon-type {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.5rem;
+  }
+}

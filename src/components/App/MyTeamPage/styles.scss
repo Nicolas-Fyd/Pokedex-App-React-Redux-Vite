@@ -1,0 +1,18 @@
+.my-team-page {
+  min-height: 90vh;
+  margin-top: 10vh;
+  padding-top: 2rem;
+
+  .my-team-page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .my-team-page-content {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+  }
+}
