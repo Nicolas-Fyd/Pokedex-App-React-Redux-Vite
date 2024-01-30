@@ -5,5 +5,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: 481px) and (max-width: 821px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 90%;
+  }
 }
 

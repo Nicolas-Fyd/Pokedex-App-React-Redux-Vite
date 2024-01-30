@@ -31,7 +31,7 @@ function Field({
 
       <label
         htmlFor={inputId}
-        className="field-label"
+        className="field-label custom-placeholder"
       >
         {placeholder}
       </label>

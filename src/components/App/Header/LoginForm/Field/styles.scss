@@ -52,3 +52,13 @@
     opacity: 1;
   }
 }
+
+.field-input::placeholder {
+  @media (min-width: 481px) and (max-width: 821px) {
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
+  }
+}

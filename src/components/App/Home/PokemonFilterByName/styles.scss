@@ -9,11 +9,15 @@
     color: black;
   }
 
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 481px) and (max-width: 821px) {
     width: 40%;
+    height: 1.5rem;
+    font-size: 1rem;
   }
 
   @media (max-width: 480px) {
     width: 60%;
+    height: 1.75rem;
+    font-size: 1rem;
   }
 }

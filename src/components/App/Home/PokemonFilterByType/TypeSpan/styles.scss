@@ -13,6 +13,16 @@
   min-width: 10rem;
   font-size: 1.5rem;
 
+  @media (min-width: 481px) and (max-width: 821px) {
+    min-width: 8rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 8rem;
+    font-size: 1rem;
+  }
+
   &:hover {
     cursor: pointer;
     opacity: 1;

@@ -36,7 +36,7 @@ function App() {
       { successMessage && <SuccessMessage message={successMessage} />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="sign-up" element={<SignUp />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="/:name" element={<PokemonDetailsPage />} />
         {isLogged && <Route path="/mon-equipe" element={<MyTeamPage />} />}
         <Route path="*" element={<Error />} />

@@ -9,6 +9,18 @@
   min-width: 300px;
   max-width: 400px;
 
+  @media (min-width: 481px) and (max-width: 821px) {
+    min-width: 175px;
+    max-width: 175px;
+    margin: 0;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 175px;
+    max-width: 175px;
+    margin: 0;
+  }
+
   .logo-container {
     position: absolute;
     top: 10px; /* Ajustez la valeur selon votre préférence */
@@ -30,6 +42,14 @@
     font-weight: bold;
     margin: 1rem;
     font-size: 1.5rem;
+
+    @media (min-width: 481px) and (max-width: 821px) {
+      font-size: 1rem;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
 
   .pokemon-type {
@@ -39,5 +59,13 @@
     font-weight: bold;
     border-radius: 5px;
     font-size: 1.5rem;
+
+    @media (min-width: 481px) and (max-width: 821px) {
+      font-size: 0.8rem;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 0.8rem;
+    }
   }
 }

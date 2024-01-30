@@ -20,7 +20,15 @@
 
 .right-header {
   display: flex;
-  margin-right: 2rem;
+  margin: 0 2rem;
+
+  @media (min-width: 481px) and (max-width: 821px) {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 1rem;
+  }
 }
 
 .pokeball {
@@ -38,8 +46,7 @@
 }
 
 .registration {
-  font-size: 0.8rem;
-  margin-left: 1rem;
+  font-size: 0.75rem;
 }
 
 .registration:hover {
