@@ -5,7 +5,7 @@
 
   .my-team-page-title {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-weight: bold;
     color: white;
   }
@@ -13,6 +13,18 @@
   .my-team-page-content {
     display: flex;
     justify-content: space-around;
+    align-content: center;
     width: 85%;
+
+    @media (min-width: 481px) and (max-width: 821px) {
+      width: 95%;
+      margin: auto;
+    }
+  
+    @media (max-width: 480px) {
+      width: 95%;
+      margin: auto;
+      flex-direction: column;
+    }
   }
 }

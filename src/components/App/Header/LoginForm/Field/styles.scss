@@ -10,6 +10,10 @@
     font-size: 1em;
     border: 1px solid #ddd;
     border-radius: .3em;
+  
+    @media (max-width: 480px) {
+      padding: .25em;
+    }
 
     &:focus {
       border-color: vars.$mainColor;
@@ -54,9 +58,6 @@
 }
 
 .field-input::placeholder {
-  @media (min-width: 481px) and (max-width: 821px) {
-    font-size: 0.75rem;
-  }
 
   @media (max-width: 480px) {
     font-size: 0.75rem;

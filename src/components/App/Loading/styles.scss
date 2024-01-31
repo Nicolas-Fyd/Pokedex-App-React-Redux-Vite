@@ -36,6 +36,10 @@
   font-size: 2em;
   animation: fade .75s infinite alternate;
 
+  @media (max-width: 480px) {
+    font-size: 1.25em;
+  }
+
   &::after {
     content: "";
     height: 30%;

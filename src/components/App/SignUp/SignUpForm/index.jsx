@@ -23,9 +23,35 @@ export default function SignUpForm() {
   const onSubmit = (datas) => { dispatch(saveSignupInformations(datas)), dispatch(submitSignup());
   };
 
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 481,
+        md: 821,
+        lg: 1200,
+      },
+    },
+  });
+
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" sx={{ backgroundColor: 'white', padding: '3rem', width: '60%' }}>
+      <Container 
+        component="main" 
+        sx={{
+          backgroundColor: 'white',
+          padding: '3rem',
+          width: '60%',
+          [theme.breakpoints.down('sm')]: {
+            width: '95%',
+            padding: '0',
+          },
+          [theme.breakpoints.down('md')]: {
+            width: '95%',
+            padding: '0',
+          }, 
+          }}
+          >
         <CssBaseline />
         <Box
           sx={{
@@ -34,6 +60,7 @@ export default function SignUpForm() {
             flexDirection: 'column',
             alignItems: 'center',
             padding: '0 3rem',
+            [theme.breakpoints.down('sm')]: {padding: '0 1rem'},
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -42,8 +69,8 @@ export default function SignUpForm() {
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <Grid container spacing={2}>
+          <form onSubmit={handleSubmit(onSubmit)} >
+            <Grid container spacing={2} >
               <Grid item xs={12}>
                 <TextField
                   {...register('pseudo')}

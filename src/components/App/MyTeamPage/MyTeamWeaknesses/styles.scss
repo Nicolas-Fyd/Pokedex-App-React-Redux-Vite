@@ -1,5 +1,13 @@
 .my-team-weaknesses {
   margin-top: 8rem;
+
+  @media (min-width: 481px) and (max-width: 821px) {
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 4rem;
+  }
 }
 
 .my-team-weaknesses-title {
@@ -8,6 +16,14 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-left: -2rem;
+
+  @media (min-width: 481px) and (max-width: 821px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
+  }
 }
 
 .my-team-weaknesses-type {

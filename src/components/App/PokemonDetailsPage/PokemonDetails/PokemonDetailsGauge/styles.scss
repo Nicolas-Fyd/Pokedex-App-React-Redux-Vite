@@ -5,6 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 480px) {
+    height: 75px;
+    width: 75px;
+  }
 }
 
 .circle-background {
@@ -23,6 +28,10 @@
   left: 50%; /* Ajoutez cette ligne */
   transform: translate(-50%, -50%);
   color: white;
+
+    @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 }
 
 .circle-overlay {
@@ -32,7 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
 }
 
 /* Style pour le cercle noir */

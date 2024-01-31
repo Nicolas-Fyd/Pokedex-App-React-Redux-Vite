@@ -5,4 +5,13 @@
   margin: auto;
   margin-top: 10vh;
   padding: 3rem 0;
+
+  @media (min-width: 481px) and (max-width: 821px) {
+    width: 95%;
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    margin-top: 1rem;
+  }
 }

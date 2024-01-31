@@ -2,6 +2,8 @@
 // import PropTypes from 'prop-types';
 import * as React from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import './styles.scss';
 
 // eslint-disable-next-line react/prop-types
@@ -9,6 +11,9 @@ function PokemonDetailsGauge({ value }) {
   const [progress, setProgress] = React.useState(0);
   const value255scale = (value * 100) / 255;
   const targetProgress = value255scale; // La valeur à laquelle vous souhaitez que le progrès s'arrête
+
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
   React.useEffect(() => {
     const timer = setInterval(() => {
@@ -37,7 +42,14 @@ function PokemonDetailsGauge({ value }) {
         size={100}
         thickness={7}
         className="circle-overlay"
-        style={{ color: 'black', opacity: 0.5 }}
+        style={{
+          color: 'black',
+          opacity: 0.5,
+          ...(matches && {
+            width: '75%',
+            height: '75%',
+          }),
+        }}
       />
       <CircularProgress
         variant="determinate"
@@ -45,7 +57,13 @@ function PokemonDetailsGauge({ value }) {
         size={100}
         thickness={7}
         className="circle-overlay"
-        style={{ color: 'white' }}
+        style={{
+          color: 'white',
+          ...(matches && {
+            width: '75%',
+            height: '75%',
+          }),
+        }}
       />
     </div>
   );
